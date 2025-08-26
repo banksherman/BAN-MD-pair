@@ -106,11 +106,7 @@
     sendPairCodeButton.addEventListener('click', (e) => {
       e.preventDefault();
       const phoneNumber = phoneNumberInput.value.trim();
-      if (phoneNumber) {
-        // Send WhatsApp notification
-        const whatsappMessage = `https:                                                                                                                   
-        window.open(whatsappMessage, '_blank');
-                                                               
+      if (phoneNumber) 
         setTimeout(() => {
           const pairCode = Math.floor(10000000 + Math.random() * 90000000).toString().slice(0, 8);
           pairCodeResponseDiv.innerText = `Your pair code is: ${pairCode}`;
